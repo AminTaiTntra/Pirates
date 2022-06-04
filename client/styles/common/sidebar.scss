@@ -1,0 +1,129 @@
+@import "./variables.scss";
+.pro-sidebar {
+  color: $sidebar-menu-font-color;
+  position: fixed;
+  @include sidebar-width;
+  border-right:1px solid $light-grey-6;
+  .pro-sidebar-inner {
+    background-color: $white;
+    .pro-sidebar-layout {
+      .pro-sidebar-header {
+        position: relative;
+        min-height: 60px;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        border-color: transparent;
+        img {
+          margin-left: 22px;
+        }
+        .small-logo {
+          height: 34px;
+          width: auto;
+        }
+        .brand-logo {
+          height: auto;
+        }
+      }
+    }
+  }
+  .pro-menu.shaped {
+    .pro-menu-item {
+      .pro-inner-item {
+        padding: 5px 20px;
+        margin-bottom: 4px;
+        .pro-icon-wrapper {
+          background-color: transparent;
+        }
+        a {
+          font-size: 14px;
+          color: $black;
+          @include semibold-font;
+         &:hover{
+          color: $blue;
+         }
+        }
+      }
+      &.active {
+        background-color: $light-grey;
+        .pro-inner-item {
+          .pro-icon-wrapper, .pro-item-content a {
+            color: $blue;
+          }
+        }
+      }
+      &:hover {
+        background-color: $light-grey;
+        color: $blue;
+      }
+    }
+  }
+  .pro-menu {
+    padding-top: 40px;
+    padding-bottom: 15px;
+    .pro-menu-item {
+      .pro-inner-item {
+        &:hover {
+          color: $blue;
+        }
+      }
+    }
+  }
+}
+@media (min-width: 992px) {
+  .pro-sidebar.lg {
+    left: 0;
+  }
+  .close-sidebar {
+    display: none !important;
+  }
+  .pro-sidebar{
+    .pro-sidebar-inner{
+      .pro-sidebar-layout{
+        .pro-sidebar-header{
+          .brand-logo{
+            max-width: 190px;
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 991.98px) {
+  .close-sidebar {
+    width: 45px;
+    height: 45px;
+    line-height: 45px !important;
+    text-align: center;
+    font-size: 20px;
+    color: $dark-grey-2;
+    background-color: $white;
+    position: absolute;
+    right: 0;
+    top: 10px;
+    cursor: pointer;
+  }
+  .pro-sidebar{
+    .pro-sidebar-inner{
+      .pro-sidebar-layout{
+        .pro-sidebar-header{
+          .brand-logo{
+            max-width: 160px;
+          }
+        }
+      }
+    }
+  }
+}
+@media (min-width: 300px) and (max-width: 991.98px) {
+  .pro-sidebar.lg {
+    left: -250px;
+  }
+}
+@media (max-width: 299.98px) {
+  .pro-sidebar.lg {
+    width: 100%;
+    min-width: 100%;
+    left: -100%;
+  }
+}
