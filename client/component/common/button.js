@@ -1,7 +1,7 @@
 import React from 'react';
 import { Button, Spinner } from 'react-bootstrap';
 
-const CustomButton = ({
+export const CustomButton = ({
   label,
   disabled,
   isLoading,
@@ -41,4 +41,4 @@ const CustomButton = ({
   );
 };
 
-export default CustomButton;
+// export default CustomButton;

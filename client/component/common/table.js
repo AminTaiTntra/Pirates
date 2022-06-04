@@ -1,7 +1,7 @@
 import React from 'react';
 import { Table } from 'react-bootstrap';
 
-const CustomTable = ({
+export const CustomTable = ({
   tableClass,
   headers,
   children,
@@ -70,4 +70,3 @@ const CustomTable = ({
   );
 };
 
-export default CustomTable;

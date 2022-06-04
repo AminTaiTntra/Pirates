@@ -2,7 +2,7 @@ import React from 'react';
 import { Form, Container,Button } from 'react-bootstrap';
 import { yupResolver } from '@hookform/resolvers/yup';
 import { useForm } from 'react-hook-form';
-// import { login } from './api/loginManagemnet';
+import { login } from './api/loginManagemnet';
 // import { setUserToken } from '../actions/login';
 import {Input} from '../component/common/input';
 import schema from '../schema/login';
@@ -65,7 +65,12 @@ const Login = () => {
             variant="primary" type="button">
           Sign In
             </Button>
-    
+            {/* <Button
+                label={buttons.login}
+                type='submit'
+                isLeftIcon={true}
+              /> */}
+              {/* <button type='button'>Log In</button> */}
    </Form.Group>
           </Form>
         </div>

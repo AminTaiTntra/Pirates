@@ -2,8 +2,7 @@ import React, { useState } from 'react';
 import { Form, InputGroup } from 'react-bootstrap';
 import Button from './button';
 
-export const 
-Input = ({
+export const Input = ({
   controlId,
   label,
   type,
@@ -141,3 +140,4 @@ Input = ({
   );
 };
 
+// export default Input;
