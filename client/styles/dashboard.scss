@@ -731,7 +731,7 @@
           background-image: linear-gradient(90deg, #FF9A8B 0%, #FF6A88 55%, #FF99AC 100%);
           .icon.white{
             &::after{
-              background: url(../../public/images/rms-team.png) no-repeat;
+              background: url("../public/images/rms-team.png") no-repeat;
               @include dashboard-team-icons;
             }
           }
@@ -745,7 +745,7 @@
           background-image: linear-gradient(90deg, #74EBD5 0%, #9FACE6 100%);
           .icon.white{
             &::after{
-              background: url(../../public/images/sccb-team.png) no-repeat;
+              background: url("../public/images/sccb-team.png") no-repeat;
               @include dashboard-team-icons;
             }
           }
@@ -759,7 +759,7 @@
           background-image: linear-gradient(45deg, #FBDA61 0%, #FF5ACD 100%);
           .icon.white{
             &::after{
-              background: url(../../public/images/bes-team.png) no-repeat;
+              background: url(../public/images/bes-team.png) no-repeat;
               @include dashboard-team-icons;
             }
           }
@@ -773,7 +773,7 @@
           background-image: linear-gradient( 102.1deg,  rgba(96,221,142,1) 8.7%, rgba(24,138,141,1) 88.1% );
           .icon.white{
             &::after{
-              background: url(../../public/images/sms-team.png) no-repeat;
+              background: url(../public/images/sms-team.png) no-repeat;
               @include dashboard-team-icons;
             }
           }
@@ -787,7 +787,7 @@
           background-image: linear-gradient(to top, #c471f5 0%, #fa71cd 100%);
           .icon.white{
             &::after{
-              background: url(../../public/images/cs-team.png) no-repeat;
+              background: url(../public/images/cs-team.png) no-repeat;
               @include dashboard-team-icons;
             }
           }
@@ -801,7 +801,7 @@
           background-image: linear-gradient(to top, #48c6ef 0%, #6f86d6 100%);
           .icon.white{
             &::after{
-              background: url(../../public/images/duntrade-team.png) no-repeat;
+              background: url(../public/images/duntrade-team.png) no-repeat;
               @include dashboard-team-icons;
             }
           }
@@ -815,7 +815,7 @@
           background-image: radial-gradient( circle 693px at 10.1% 33%,  rgba(139,82,161,1) 0%, rgba(249,193,207,1) 100.2% );
           .icon.white{
             &::after{
-              background: url(../../public/images/ib-team.png) no-repeat;
+              background: url(../public/images/ib-team.png) no-repeat;
               @include dashboard-team-icons;
             }
           }
